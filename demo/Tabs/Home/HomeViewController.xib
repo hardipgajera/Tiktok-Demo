@@ -27,14 +27,56 @@
                         <outlet property="delegate" destination="-1" id="bb3-tT-ebW"/>
                     </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyf-fh-9Zg" userLabel="UserTab">
+                    <rect key="frame" x="20" y="84" width="353" height="25"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BES-3H-6yj">
+                            <rect key="frame" x="20" y="0.0" width="141" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ns7-Lu-RK2">
+                            <rect key="frame" x="176" y="0.0" width="1" height="25"/>
+                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="yeT-c9-MuJ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMq-Ro-LJx">
+                            <rect key="frame" x="192" y="0.0" width="141" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BES-3H-6yj" firstAttribute="leading" secondItem="Nyf-fh-9Zg" secondAttribute="leading" constant="20" id="0Xh-OB-G7f"/>
+                        <constraint firstItem="BES-3H-6yj" firstAttribute="top" secondItem="Nyf-fh-9Zg" secondAttribute="top" id="6P5-ob-Dk1"/>
+                        <constraint firstItem="Ns7-Lu-RK2" firstAttribute="height" secondItem="Nyf-fh-9Zg" secondAttribute="height" id="PSk-KV-PL7"/>
+                        <constraint firstItem="Ns7-Lu-RK2" firstAttribute="centerX" secondItem="Nyf-fh-9Zg" secondAttribute="centerX" id="TJ3-ZE-P3U"/>
+                        <constraint firstAttribute="bottom" secondItem="RMq-Ro-LJx" secondAttribute="bottom" id="ZHH-Ju-skn"/>
+                        <constraint firstAttribute="trailing" secondItem="RMq-Ro-LJx" secondAttribute="trailing" constant="20" id="aDm-Uh-RMP"/>
+                        <constraint firstAttribute="bottom" secondItem="BES-3H-6yj" secondAttribute="bottom" id="hc7-zZ-vad"/>
+                        <constraint firstItem="RMq-Ro-LJx" firstAttribute="leading" secondItem="Ns7-Lu-RK2" secondAttribute="trailing" constant="15" id="hpB-ec-Ra3"/>
+                        <constraint firstItem="RMq-Ro-LJx" firstAttribute="top" secondItem="Nyf-fh-9Zg" secondAttribute="top" id="ps6-05-Tkk"/>
+                        <constraint firstItem="Ns7-Lu-RK2" firstAttribute="centerY" secondItem="Nyf-fh-9Zg" secondAttribute="centerY" id="qgR-Gd-Po9"/>
+                        <constraint firstItem="Ns7-Lu-RK2" firstAttribute="leading" secondItem="BES-3H-6yj" secondAttribute="trailing" constant="15" id="ucx-Q4-dmR"/>
+                        <constraint firstAttribute="height" constant="25" id="w6t-i5-0dz"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nyf-fh-9Zg" secondAttribute="trailing" constant="20" id="1OD-3R-qhX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YSM-SJ-Vre" secondAttribute="trailing" id="4R3-UO-9iQ"/>
                 <constraint firstItem="YSM-SJ-Vre" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ori-or-OUw"/>
                 <constraint firstItem="YSM-SJ-Vre" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ox1-Te-2PM"/>
                 <constraint firstAttribute="bottom" secondItem="YSM-SJ-Vre" secondAttribute="bottom" id="aPo-1I-uh6"/>
+                <constraint firstItem="Nyf-fh-9Zg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="hq4-dc-899"/>
+                <constraint firstItem="Nyf-fh-9Zg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zG3-NY-5kF"/>
             </constraints>
             <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
         </view>
@@ -42,6 +84,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

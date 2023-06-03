@@ -19,6 +19,16 @@ extension UIView {
         mask.path = path.cgPath
         layer.mask = mask
     }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
 }
 
 extension String{

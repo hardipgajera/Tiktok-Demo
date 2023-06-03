@@ -1,9 +1,8 @@
 //
-//  VideoCacheManager.swift
-//  KD Tiktok-Clone
+//  Extension.swift
+//  demo
 //
-//  Created by Sam Ding on 9/9/20.
-//  Copyright © 2020 Kaishan. All rights reserved.
+//  Created by hardip gajera on 03/06/23.
 //
 
 import Foundation

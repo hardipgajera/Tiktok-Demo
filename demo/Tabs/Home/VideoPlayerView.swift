@@ -1,9 +1,8 @@
 //
-//  VideoPlayerView.swift
-//  KD Tiktok-Clone
+//  Extension.swift
+//  demo
 //
-//  Created by Sam Ding on 9/24/20.
-//  Copyright © 2020 Kaishan. All rights reserved.
+//  Created by hardip gajera on 03/06/23.
 //
 
 import Foundation
@@ -34,6 +33,7 @@ class VideoPlayerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        avPlayerLayer.frame = frame
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,7 +47,6 @@ class VideoPlayerView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         backgroundColor = .clear
-        avPlayerLayer.frame = self.layer.bounds
     }
     
     func setupView(){

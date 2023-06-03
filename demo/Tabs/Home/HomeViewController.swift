@@ -61,15 +61,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(
             url: URL(string: item.url)!,
             fileExtension: item.urlExtension,
-            width: Int(tableView.frame.width),
-            height: Int(tableView.frame.height)
+            width: Int(self.view.frame.width),
+            height: Int(self.view.frame.height)
         )
         cell.play()
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height
+        return self.view.frame.height
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

@@ -12,6 +12,8 @@ import AVFoundation
 
 class HomeTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var musicLbl: MarqueeLabel!
+    
     var playerView: VideoPlayerView!
     
     private(set) var isPlaying = false
@@ -28,11 +30,12 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
-        playerView = VideoPlayerView(frame: self.contentView.frame)
+        self.playerView = VideoPlayerView(frame: self.contentView.frame)
+        self.musicLbl.holdScrolling = true
+        self.musicLbl.animationDelay = 0
         
-        
-        contentView.addSubview(playerView)
-        contentView.sendSubviewToBack(playerView)
+        self.contentView.addSubview(self.playerView)
+        self.contentView.sendSubviewToBack(self.playerView)
     }
     
     
@@ -43,6 +46,7 @@ class HomeTableViewCell: UITableViewCell {
     func play() {
         if !isPlaying {
             playerView.play()
+            musicLbl.holdScrolling = false
             isPlaying = true
         }
     }
@@ -50,6 +54,7 @@ class HomeTableViewCell: UITableViewCell {
     func pause(){
         if isPlaying {
             playerView.pause()
+            musicLbl.holdScrolling = true
             isPlaying = false
         }
     }
