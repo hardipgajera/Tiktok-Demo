@@ -25,7 +25,9 @@ class MainTabBarController: UIViewController {
     }
     
     func setUpComponents() {
-        tabBarButtonDidTapped(UIButton())
+        DispatchQueue.main.async {
+            self.tabBarButtonDidTapped(UIButton())
+        }
     }
     
     @IBAction func tabBarButtonDidTapped(_ sender: UIButton) {
