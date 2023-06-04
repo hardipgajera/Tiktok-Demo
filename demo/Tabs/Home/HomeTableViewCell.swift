@@ -38,7 +38,6 @@ class HomeTableViewCell: UITableViewCell {
         self.contentView.sendSubviewToBack(self.playerView)
     }
     
-    
     func configure(url: URL, fileExtension: String, width: Int, height: Int) {
         playerView.configure(url: url, fileExtension: fileExtension, size: (width, height))
     }

@@ -17,6 +17,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="449" height="843"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cx-aH-55R">
+                        <rect key="frame" x="0.0" y="593" width="449" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overlay" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-4d-1Jc">
+                                <rect key="frame" x="0.0" y="0.0" width="449" height="250"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="6wH-U6-XpY"/>
+                            <constraint firstItem="2gb-4d-1Jc" firstAttribute="leading" secondItem="9cx-aH-55R" secondAttribute="leading" id="8Gi-AR-hTz"/>
+                            <constraint firstAttribute="bottom" secondItem="2gb-4d-1Jc" secondAttribute="bottom" id="ecH-XB-w9P"/>
+                            <constraint firstAttribute="trailing" secondItem="2gb-4d-1Jc" secondAttribute="trailing" id="pet-49-i6h"/>
+                            <constraint firstItem="2gb-4d-1Jc" firstAttribute="top" secondItem="9cx-aH-55R" secondAttribute="top" id="qF0-dI-GM8"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-q6-r9h">
                         <rect key="frame" x="20" y="623" width="409" height="200"/>
                         <subviews>
@@ -321,8 +337,11 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="gfb-q6-r9h" secondAttribute="trailing" constant="20" id="551-uG-hZ4"/>
+                    <constraint firstAttribute="trailing" secondItem="9cx-aH-55R" secondAttribute="trailing" id="9j0-j0-Cxi"/>
                     <constraint firstItem="gfb-q6-r9h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BBc-aX-tTg"/>
+                    <constraint firstItem="9cx-aH-55R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XYr-kS-uWb"/>
                     <constraint firstAttribute="bottom" secondItem="gfb-q6-r9h" secondAttribute="bottom" constant="20" id="dVi-uy-F3C"/>
+                    <constraint firstAttribute="bottom" secondItem="9cx-aH-55R" secondAttribute="bottom" id="ql1-gg-ymv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -338,6 +357,7 @@
         <image name="CdIcon" width="16" height="16"/>
         <image name="ChatIcon" width="16" height="16"/>
         <image name="HeartIcon" width="16" height="16"/>
+        <image name="Overlay" width="414" height="268"/>
         <image name="ShareIcon" width="16" height="16"/>
         <image name="avatar" width="3648" height="5472"/>
         <namedColor name="AppPink">
