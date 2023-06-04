@@ -22,6 +22,7 @@ class MainTabBarController: UIViewController {
     
     func setUpUI() {
         tabBarView.roundCorners([.topLeft, .topRight], radius: 12)
+        self.view.bringSubviewToFront(tabBarView)
     }
     
     func setUpComponents() {

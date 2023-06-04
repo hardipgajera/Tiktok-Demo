@@ -177,6 +177,11 @@
                                             <constraint firstAttribute="bottom" secondItem="awt-nw-nN5" secondAttribute="bottom" id="Ukt-9F-NDv"/>
                                             <constraint firstAttribute="trailing" secondItem="awt-nw-nN5" secondAttribute="trailing" constant="20" id="p7E-2N-sUM"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
